@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LUMINA | AI Support for Alzheimer's</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #0d0d1a, #000);
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(15, 15, 47, 0.8);
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(6px);
+    }
+    nav a {
+      margin: 0 12px;
+      color: #77f5ff;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 20px;
+      padding: 6px 12px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      background: linear-gradient(to right, #42e8e0, #b57aff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 680px;
+      margin: auto;
+      color: #ccc;
+    }
+    .button {
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #42e8e0;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #35cfd1;
+    }
+    section {
+      padding: 60px 8%;
+      border-radius: 30px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #b57aff;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 0.95rem;
+      border-top: 1px solid #222;
+    }
+    input[type="email"] {
+      padding: 12px;
+      font-size: 1rem;
+      margin-right: 12px;
+      border: none;
+      border-radius: 20px;
+      width: 250px;
+    }
+    .confirmation {
+      color: #77f5ff;
+      margin-top: 15px;
+      display: none;
+    }
+  </style>
+  <script>
+    function submitEmail() {
+      var email = document.getElementById("email").value;
+      if(email) {
+        document.getElementById("confirmation").style.display = "block";
+        document.getElementById("email").value = "";
+      }
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <div><strong>LUMINA</strong></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#technology">Technology</a>
+    <a href="#team">Team</a>
+    <a href="#spaces">Spaces</a>
+    <a href="#waitlist">Waitlist</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>LUMINA</h1>
+  <p>AI to light the way for Alzheimer’s patients. Supporting them in preserving their memories and sharing their stories. Powered by LLMs, built with care.</p>
+  <button class="button" onclick="location.href='#waitlist'">Join the Waitlist</button>
+</div>
+
+<section id="about">
+  <h2>About LUMINA</h2>
+  <p>LUMINA is a nonprofit charity developing AI technologies to support individuals with Alzheimer’s and related memory disorders. Our mission is to restore dignity, connection, and memory through emotionally intelligent, privacy-safe systems that adapt to each person's unique cognitive journey.</p>
+</section>
+
+<section id="technology">
+  <h2>Technology</h2>
+  <ul>
+    <li><strong>Conversational AI:</strong> Reinforces memory through natural dialogue</li>
+    <li><strong>Familiar Voice Synthesis:</strong> Recreates family voices for emotional support</li>
+    <li><strong>Encrypted Local Memory Storage:</strong> Ensures maximum privacy</li>
+    <li><strong>Memory Token:</strong> Optional blockchain-powered utility for funding and continued care</li>
+    <li><strong>Open Source Repository:</strong> View our foundational research and tools here: <a href="https://github.com/Sangeetha-maker/NeuroCare-Chatbot" target="_blank" style="color:#77f5ff;">github.com/Sangeetha-maker/NeuroCare-Chatbot</a></li>
+  </ul>
+</section>
+
+<section id="team">
+  <h2>Meet the Team</h2>
+  <p>LUMINA is developed by a world-class team of researchers, engineers, and designers, in working collaboration with <strong>Stanford University</strong>.</p>
+  <ul>
+    <li><strong>Dr. Elaine Tan</strong> — Neuro-AI Researcher (@elaine_tan_ai)</li>
+    <li><strong>David Harris</strong> — Lead AI Engineer (@harristechdev)</li>
+    <li><strong>Rachel Nguyen</strong> — Product Designer (@rachelbuilds)</li>
+    <li><strong>Johannne Chen</strong> — Machine Learning Researcher (@jchenml)</li>
+    <li><strong>Peter Mitchell</strong> — LLM Specialist (@pmitchell_ai)</li>
+    <li><strong>James Robinson</strong> — Systems Architect (@robinsync)</li>
+    <li><strong>Kevin Patell</strong> — Data Scientist (@kevindatasets)</li>
+    <li><strong>Joshua Sharma</strong> — AI Ethicist (@jsharma_ethics)</li>
+    <li><strong>Emily Sharma</strong> — Research Scientist (@emilybrainworks)</li>
+    <li><strong>Daniel Iqbal</strong> — Memory UI/UX Engineer (@danielixui)</li>
+    <li><strong>Sangeetha</strong> — GitHub Backend Engineer (@sangeetha_dev)</li>
+  </ul>
+</section>
+
+<section id="spaces">
+  <h2>Live Twitter Spaces</h2>
+  <p>🗓 <strong>April 29th, 2025 — 9:00PM EST</strong><br>
+  Join us for a deep discussion on AI, memory care, and our vision for global support.<br>
+  Spaces link posted on <a href="https://twitter.com/TheLuminaAI" style="color:#77f5ff;">@TheLuminaAI</a>.</p>
+</section>
+
+<section id="waitlist">
+  <h2>Waitlist Access</h2>
+  <p>Currently open to healthcare professionals, early supporters, and invited families. Enter your email to join the waitlist for early access, donation matching, or volunteer opportunities:</p>
+  <input type="email" id="email" placeholder="Enter your email">
+  <button class="button" onclick="submitEmail()">Submit</button>
+  <div id="confirmation" class="confirmation">✅ Email recorded. You're on the list.</div>
+</section>
+
+<footer>
+  &copy; 2025 LUMINA Foundation — A 501(c)(3) Nonprofit Organization. <br>
+  In collaboration with Stanford University. All rights reserved.
+</footer>
+
+</body>
+</html>
